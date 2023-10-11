@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSG LANDERS</title>
+    <link rel="stylesheet" href="css/ssg_landers.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <script src="lib/jquery-3.7.0.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        $(function () {
+            var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+
+            $('.hd_1 .inner .m_left img').click(function () {
+                $('.hd_2').show()
+                $('.hd_1').hide()
+            })
+            $('.hd_2 .inner .m_left img').click(function () {
+                $('.hd_2').hide()
+                $('.hd_1').show()
+            })
+
+            $('.pop_up .btn button').click(function () {
+                $('.pop_up').hide()
+            })
+
+        })
+    </script>
+</head>
+
+<body>
+    <section class="main">
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/banner_main_1.jpg" alt="1">
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://www.ssglandersstore.co.kr/goods/goods_view.php?goodsNo=1000001329"
+                        target="_blank"><img src="img/banner_main_2.jpg" alt="2"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://www.ssglanders.com/media/news/detail?idx=19491" target="_blank"><img
+                            src="img/banner_main_3.jpg" alt="3"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://ssglanderseshop.co.kr/shop/event.php?ev_id=1690945505" target="_blank"><img
+                            src="img/banner_main_4.jpg" alt="4"></a>
+                </div>
+            </div>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+
+        <header class="hd_1">
+            <div class="inner">
+                <h1>
+                    <a href="https://goddykim.github.io/project03/"><img src="img/MAIN_LOGO.png" alt="1"></a>
+                </h1>
+                <div class="m_left">
+                    <ul>
+                        <li><a href="#"><img src="img/icons8-메뉴-50.png" alt="1"></a></li>
+                        <li>
+                            <a href="#">LANDERS</a>
+                            <ul class="sub">
+                                <li><a href="https://www.ssglanders.com/landers/history">랜더스 소개</a></li>
+                                <li><a href="https://www.ssglanders.com/media/news">랜더스 소식</a></li>
+                                <li><a href="https://www.ssglanders.com/landers/emblem">엠블럼</a></li>
+                                <li><a href="https://www.ssglanders.com/landers/sponsor">후원사</a></li>
+                                <li><a href="https://www.ssglanders.com/stadium/info">구장소개</a></li>
+                                <li><a href="https://www.ssglanders.com/stadium/parking">주차안내</a></li>
+                                <li><a href="https://www.ssglanders.com/stadium/map">찾아오시는 길</a></li>
+                            </ul><!-- .sub end -->
+                        </li>
+                        <li>
+                            <a href="#">PLAYERS</a>
+                            <ul class="sub">
+                                <li><a href="https://www.ssglanders.com/players/list?position=coach">코칭 스태프</a></li>
+                                <li><a href="https://www.ssglanders.com/players/list?position=pitcher">투수</a></li>
+                                <li><a href="https://www.ssglanders.com/players/list?position=catcher">포수</a></li>
+                                <li><a href="https://www.ssglanders.com/players/list?position=infielder">내야수</a></li>
+                                <li><a href="https://www.ssglanders.com/players/list?position=outfielder">외야수</a></li>
+                                <li><a href="https://www.ssglanders.com/players/list?armyPlayerYn=Y">군입대 선수</a></li>
+                                <li><a href="https://www.koreabaseball.com/Player/Register.aspx">선수 등록 현황</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">GAME</a>
+                            <ul class="sub">
+                                <li><a href="https://www.ssglanders.com/game/schedule">1군 경기일정</a></li>
+                                <li><a href="https://www.koreabaseball.com/Futures/Schedule/GameList.aspx">퓨처스 경기일정</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div><!-- .m_left end -->
+                <div class="m_right">
+                    <ul>
+                        <li>
+                            <a href="#">STATS</a>
+                            <ul class="sub">
+                                <li><a href="https://www.koreabaseball.com/TeamRank/TeamRank.aspx">팀 순위</a></li>
+                                <li><a
+                                        href="https://www.koreabaseball.com/Record/Player/PitcherBasic/Basic1.aspx">투수기록</a>
+                                </li>
+                                <li><a
+                                        href="https://www.koreabaseball.com/Record/Player/HitterBasic/Basic1.aspx">타자기록</a>
+                                </li>
+                                <li><a href="https://www.koreabaseball.com/Record/History/Team/Record.aspx">역대구단성적</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">FAN</a>
+                            <ul class="sub">
+                                <li><a href="https://www.ssglanders.com/fan/sns">SNS</a></li>
+                                <li><a href="https://www.ssglanders.com/fan/cheer">응원단</a></li>
+                                <li><a href="https://www.youtube.com/@SSGLANDERS/videos">MEDIA</a></li>
+                                <li><a href="https://www.ssglanders.com/media/photo">PHOTO</a></li>
+                                <!-- <li><a href="#">FAQ</a></li> -->
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">SHOP</a>
+                            <ul class="sub">
+                                <li><a href="https://ssglanderseshop.co.kr/">by emart</a></li>
+                                <li><a href="https://www.ssglandersstore.co.kr/">by hyungji</a></li>
+                            </ul>
+                        </li>
+                        <li class="ticket">
+                            <a href="#">TICKET</a>
+                            <ul class="sub">
+                                <li><a href="https://www.ssglanders.com/game/ticket">입장권 안내</a></li>
+                                <li><a href="https://www.ticketlink.co.kr/sports/baseball/476#reservation"
+                                        target="_blank">티켓 예매</a>
+                                </li>
+                                <li><a href="https://www.ssglanders.com/game/group">단체관람 신청</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- .m_right end -->
+            </div><!-- .inner end -->
+        </header>
+
+        <!-- header_2 -->
+        <header class="hd_2">
+            <div class="inner">
+                <h1>
+                    <a href="#"><img src="img/MAIN_LOGO.png" alt="1"></a>
+                </h1>
+                <div class="m_left">
+                    <ul>
+                        <li><a href="#"><img src="img/TOP_IC_CLOSE.png" alt="1"></a></li>
+                        <li>
+                            <a href="#">LANDERS</a>
+                            <ul class="sub">
+                                <li><a href="https://www.ssglanders.com/landers/history">랜더스 소개</a></li>
+                                <li><a href="https://www.ssglanders.com/media/news">랜더스 소식</a></li>
+                                <li><a href="https://www.ssglanders.com/landers/emblem">엠블럼</a></li>
+                                <li><a href="https://www.ssglanders.com/landers/sponsor">후원사</a></li>
+                                <li><a href="https://www.ssglanders.com/stadium/info">구장소개</a></li>
+                                <li><a href="https://www.ssglanders.com/stadium/parking">주차안내</a></li>
+                                <li><a href="https://www.ssglanders.com/stadium/map">찾아오시는 길</a></li>
+                            </ul><!-- .sub end -->
+                        </li>
+                        <li>
+                            <a href="#">PLAYERS</a>
+                            <ul class="sub">
+                                <li><a href="https://www.ssglanders.com/players/list?position=coach">코칭 스태프</a></li>
+                                <li><a href="https://www.ssglanders.com/players/list?position=pitcher">투수</a></li>
+                                <li><a href="https://www.ssglanders.com/players/list?position=catcher">포수</a></li>
+                                <li><a href="https://www.ssglanders.com/players/list?position=infielder">내야수</a></li>
+                                <li><a href="https://www.ssglanders.com/players/list?position=outfielder">외야수</a></li>
+                                <li><a href="https://www.ssglanders.com/players/list?armyPlayerYn=Y">군입대 선수</a></li>
+                                <li><a href="https://www.koreabaseball.com/Player/Register.aspx">선수 등록 현황</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">GAME</a>
+                            <ul class="sub">
+                                <li><a href="https://www.ssglanders.com/game/schedule">1군 경기일정</a></li>
+                                <li><a href="https://www.koreabaseball.com/Futures/Schedule/GameList.aspx">퓨처스 경기일정</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div><!-- .m_left end -->
+                <div class="m_right">
+                    <ul>
+                        <li>
+                            <a href="#">STATS</a>
+                            <ul class="sub">
+                                <li><a href="https://www.koreabaseball.com/TeamRank/TeamRank.aspx">팀 순위</a></li>
+                                <li><a
+                                        href="https://www.koreabaseball.com/Record/Player/PitcherBasic/Basic1.aspx">투수기록</a>
+                                </li>
+                                <li><a
+                                        href="https://www.koreabaseball.com/Record/Player/HitterBasic/Basic1.aspx">타자기록</a>
+                                </li>
+                                <li><a href="https://www.koreabaseball.com/Record/History/Team/Record.aspx">역대구단성적</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">FAN</a>
+                            <ul class="sub">
+                                <li><a href="https://www.ssglanders.com/fan/sns">SNS</a></li>
+                                <li><a href="https://www.ssglanders.com/fan/cheer">응원단</a></li>
+                                <li><a href="https://www.youtube.com/@SSGLANDERS/videos">MEDIA</a></li>
+                                <li><a href="https://www.ssglanders.com/media/photo">PHOTO</a></li>
+                                <!-- <li><a href="#">FAQ</a></li> -->
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">SHOP</a>
+                            <ul class="sub">
+                                <li><a href="https://ssglanderseshop.co.kr/">by emart</a></li>
+                                <li><a href="https://www.ssglandersstore.co.kr/">by hyungji</a></li>
+                            </ul>
+                        </li>
+                        <li class="ticket">
+                            <a href="#">TICKET</a>
+                            <ul class="sub">
+                                <li><a href="https://www.ssglanders.com/game/ticket">입장권 안내</a></li>
+                                <li><a href="https://www.ticketlink.co.kr/sports/baseball/476#reservation"
+                                        target="_blank">티켓 예매</a>
+                                </li>
+                                <li><a href="https://www.ssglanders.com/game/group">단체관람 신청</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- .m_right end -->
+            </div><!-- .inner end -->
+        </header><!-- header_2 -->
+
+        <div class="banner_bt">
+            <div class="inner">
+                <ul>
+                    <li><img src="img/SSG_SYMBOL_W.png" alt="1"></li>
+                    <li>팀순위<br>3위</li>
+                    <li>경기수<br>140경기</li>
+                    <li>승<br>73승</li>
+                    <li>패<br>64패</li>
+                    <li>무<br>3무</li>
+                    <li>승률<br>0.533</li>
+                    <li>게임차<br>11경기</li>
+                    <li>연속<br>2승</li>
+                </ul>
+                <div>
+                    <a href="https://www.koreabaseball.com/TeamRank/TeamRank.aspx" target="_blank"><img
+                            src="img/icons8-더하다-30.png" alt="1"></a>
+                </div>
+            </div><!-- .inner end -->
+        </div><!-- .banner_bt end -->
+    </section><!-- .main end -->
+
+    <section class="cont01">
+        <div class="inner">
+            <div class="game">
+                <div class="txt">
+                    <h3>경기일정</h3>
+                    <a href="https://www.ssglanders.com/game/schedule"><img src="img/btn_more.png" alt="1"></a>
+                </div><!-- .txt end -->
+                <div class="game_1">
+                    <div class="team_1">
+                        <img src="img/club_emblem_ssg.png" alt="1">
+                    </div><!-- .team_1 end -->
+                    <div class="txt">
+                        <p>10/10 (화) 광주</p>
+                        <h3>6 : 5</h3>
+                        <span>경기종료</span>
+                    </div><!-- .txt end -->
+                    <div class="team_2">
+                        <img src="img/club_emblem_kia.png" alt="2">
+                    </div><!-- .team_2 end -->
+                </div><!-- .game_1 end -->
+                <div class="game_2">
+                    <div class="team_1">
+                        <img src="img/club_emblem_kiwoom.png" alt="1">
+                    </div><!-- .team_1 end -->
+                    <div class="txt">
+                        <p>10/13 (금) 문학</p>
+                        <h3>0 : 0</h3>
+                        <span>경기예정</span>
+                    </div><!-- .txt end -->
+                    <div class="team_2">
+                        <img src="img/club_emblem_ssg.png" alt="2">
+                    </div><!-- .team_2 end -->
+                </div><!-- .game_2 end -->
+                <div class="game_3">
+                    <div class="team_1">
+                        <img src="img/club_emblem_ssg.png" alt="1">
+                    </div><!-- .team_1 end -->
+                    <div class="txt">
+                        <p>10/14 (토) 대구</p>
+                        <h3>0 : 0</h3>
+                        <span>경기예정</span>
+                    </div><!-- .txt end -->
+                    <div class="team_2">
+                        <img src="img/club_emblem_samsung.png" alt="2">
+                    </div><!-- .team_2 end -->
+                </div><!-- .game_3 end -->
+            </div><!-- .game -->
+            <div class="news">
+                <div class="txt">
+                    <h3>
+                        <p>LANDERS</p> NEWS
+                    </h3>
+                    <a href="https://www.ssglanders.com/media/news"><img src="img/btn_more.png" alt="1"></a>
+                </div><!-- .txt end -->
+                <div class="items">
+                    <a href="https://www.ssglanders.com/media/news/detail?idx=19512&page="><img src="img/NEWS_1.png"
+                            alt="1"></a>
+                    <a href="https://www.ssglanders.com/media/news/detail?idx=19511&page="><img src="img/NEWS_2.jpg"
+                            alt="2"></a>
+                    <a href="https://www.ssglanders.com/media/news/detail?idx=19510&page="><img src="img/NEWS_3.jpg"
+                            alt="3"></a>
+                    <a href="https://www.ssglanders.com/media/news/detail?idx=19509&page="><img src="img/NEWS_4.jpg"
+                            alt="4"></a>
+                    <!-- <a href="#"><img src="img/news_4.jpg" alt="4"></a> -->
+                </div><!-- .items end -->
+            </div><!-- .news end -->
+            <div class="landers">
+                <div class="box_1">
+                    <a href="https://www.ticketlink.co.kr/sports/baseball/476#reservation" target="_blank"><img
+                            src="img/SSG_TICKET.png" alt="1"></a>
+                </div><!-- .box_1 end -->
+                <div class="box_2">
+                    <a href="https://ssglanderseshop.co.kr/" target="_blank"><img src="img/SHOP_emart.png" alt="1"></a>
+                    <a href="https://www.ssglandersstore.co.kr/" target="_blank"><img src="img/SHOP_hyungji.png"
+                            alt="2"></a>
+                </div><!-- .box_2 end -->
+                <div class="box_3">
+                    <a href="https://www.mhstadium.co.kr/fmcs/1" target="_blank"><img src="img/SSG_STADIUM.png"
+                            alt="1"></a>
+                </div><!-- .box_3 end -->
+            </div><!-- .landers end -->
+        </div><!-- .inner end -->
+    </section><!-- .cont01 end -->
+
+    <div class="side">
+        <div class="inner">
+            <a href="https://play.google.com/store/apps/details?id=com.skt.ilbs.skwyverns.app" target="_blank"><img
+                    src="img/LANDERS.png" alt="1"></a>
+            <a href="https://www.instagram.com/ssglanders.incheon/" target="_blank"><img src="img/INSTA.png"
+                    alt="2"></a>
+            <a href="https://www.youtube.com/c/SSGLANDERS" target="_blank"><img src="img/YOUTUBE.png" alt="3"></a>
+        </div><!-- .inner end -->
+    </div><!-- .side end -->
+
+    <div class="pop_up">
+        <div class="inner">
+            <a href="https://www.ssglandersstore.co.kr/goods/goods_search.php?keyword=%EC%B5%9C%EC%A3%BC%ED%99%98%EA%B8%B0%EB%85%90&recentCount=5"
+                target="_blank"><img src="img/BOX.jpg" alt="1"></a>
+        </div><!-- .inner end -->
+        <div class="btn">
+            <div>
+                <input type="checkbox">
+                <p>오늘 하루 보이지 않음</p>
+            </div>
+            <button>X</button>
+        </div><!-- .btn end -->
+    </div><!-- .pop_up end -->
+
+    <section class="cont02">
+        <div class="players">
+            <a href="https://www.ssglanders.com/players/list?position=coach">
+                <img src="img/PLAYERS_BANNER.jpg" alt="1">
+                <p>SSG LANDERS PLAYERS</p>
+            </a>
+        </div><!-- .players end -->
+    </section><!-- .cont02 end -->
+
+    <section class="cont03">
+        <div class="inner">
+            <div class="story">
+                <div class="txt">
+                    <h3>
+                        <p>LANDERS</p> STORY
+                    </h3>
+                    <a href="https://www.youtube.com/@SSGLANDERS/videos"><img src="img/btn_more.png" alt="1"></a>
+                </div><!-- .txt end -->
+                <div class="items">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xPShrO8rroI?si=We3pnPF1aUouAlNa"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IrjWtGI_UKw?si=LRIoKxd9czRpiFQe"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/T0wLKDJXnac?si=dPs_4NFlBcbawozz"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Dlder2qFFDM?si=dY-yFW3XIJdAtDBJ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div><!-- .items end -->
+            </div><!-- .story end -->
+            <div class="photo">
+                <div class="txt">
+                    <h3>
+                        <p>LANDERS</p> GALLERY
+                    </h3>
+                    <a href="https://www.ssglanders.com/media/photo"><img src="img/btn_more.png" alt="1"></a>
+                </div><!-- .txt end -->
+                <div class="items">
+                    <a href="https://www.ssglanders.com/media/photo/detail?idx=34214&page="><img src="img/PHOTO_1.jpg"
+                            alt="1"></a>
+                    <a href="https://www.ssglanders.com/media/photo/detail?idx=34213&page="><img src="img/PHOTO_2.jpg"
+                            alt="2"></a>
+                    <a href="https://www.ssglanders.com/media/photo/detail?idx=34212&page="><img src="img/PHOTO_3.jpg"
+                            alt="3"></a>
+                    <a href="https://www.ssglanders.com/media/photo/detail?idx=34211&page="><img src="img/PHOTO_4.jpg"
+                            alt="4"></a>
+                </div><!-- .items end -->
+            </div><!-- .photo end -->
+        </div><!-- .inner end -->
+    </section><!-- .cont03 end -->
+
+    <section class="sponsor">
+        <div class="inner">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div><a href="https://www.ssg.com/" target="_blank"><img src="img/sponsor_family_01.png"
+                                    alt="1"></a></div>
+                        <div><a href="https://store.emart.com/main/main.do" target="_blank"><img
+                                    src="img/sponsor_family_02.png" alt="2"></a></div>
+                        <div><a href="https://www.shinsegae.com/index.do" target="_blank"><img
+                                    src="img/sponsor_family_03.png" alt="3"></a></div>
+                        <div><a href="https://www.shinsegaetvshopping.com/broadcast/main" target="_blank"><img
+                                    src="img/sponsor_family_04.png" alt="4"></a></div>
+                        <div><a href="https://www.starbucks.co.kr/index.do" target="_blank"><img
+                                    src="img/sponsor_family_05.png" alt="5"></a></div>
+                        <div><a href="https://www.emarteveryday.co.kr/" target="_blank"><img
+                                    src="img/sponsor_family_06.png" alt="6"></a></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div><a href="https://www.starfield.co.kr/" target="_blank"><img src="img/sponsor_family_07.png"
+                                    alt="1"></a>
+                        </div>
+                        <div><a href="https://www.shinsegae-lnb.com/html/main/index.html" target="_blank"><img
+                                    src="img/sponsor_family_08.png" alt="2"></a></div>
+                        <div><a href="https://emart24.co.kr/" target="_blank"><img src="img/sponsor_family_09.png"
+                                    alt="3"></a></div>
+                        <div><a href="https://www.sivillage.com/main/initMain.siv" target="_blank"><img
+                                    src="img/sponsor_family_10.png" alt="4"></a></div>
+                        <div><a href="https://www.shinsegaefood.com/main.sf" target="_blank"><img
+                                    src="img/sponsor_family_11.png" alt="5"></a></div>
+                        <div><a href="https://www.premiumoutlets.co.kr/main/ko" target="_blank"><img
+                                    src="img/sponsor_family_12.png" alt="6"></a></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div><a href="https://www.shinsegae-enc.com/" target="_blank"><img
+                                    src="img/sponsor_family_13.png" alt="1"></a>
+                        </div>
+                        <div><a href="http://www.shinsegaecentralcity.com/" target="_blank"><img
+                                    src="img/sponsor_family_14.png" alt="2"></a></div>
+                        <div><a href="https://www.josunhotel.com/intro.do" target="_blank"><img
+                                    src="img/sponsor_family_15.png" alt="3"></a></div>
+                        <div><a href="https://www.gmarket.co.kr/" target="_blank"><img src="img/sponsor_family_16.png"
+                                    alt="4"></a>
+                        </div>
+                        <div><a href="https://shinsegae-inc.com/main.do" target="_blank"><img
+                                    src="img/sponsor_family_17.png" alt="5"></a></div>
+                        <div><a href="https://www.wconcept.co.kr/" target="_blank"><img src="img/sponsor_family_18.png"
+                                    alt="6"></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div><a href="https://www.ticketlink.co.kr/home" target="_blank"><img
+                                    src="img/sponsor_partner_01.png" alt="1"></a></div>
+                        <div><a href="https://hyperice.co.kr/" target="_blank"><img src="img/sponsor_partner_03.png"
+                                    alt="2"></a></div>
+                        <div><a href="https://www.k-village.co.kr/dynafit" target="_blank"><img
+                                    src="img/sponsor_sponsor_01.png" alt="3"></a></div>
+                        <div><a href="https://www.hyundaicard.com/index.jsp" target="_blank"><img
+                                    src="img/sponsor_sponsor_02.png" alt="4"></a></div>
+                        <div><a href="https://www.dodrammall.com/" target="_blank"><img src="img/sponsor_sponsor_03.png"
+                                    alt="5"></a>
+                        </div>
+                        <div><a href="https://www.bavarian.co.kr/" target="_blank"><img src="img/sponsor_sponsor_04.png"
+                                    alt="6"></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div><a href="https://www.hitejinro.com/" target="_blank"><img src="img/sponsor_sponsor_05.png"
+                                    alt="1"></a>
+                        </div>
+                        <div><a href="https://www.gbattery.com/" target="_blank"><img src="img/sponsor_sponsor_06.png"
+                                    alt="2"></a>
+                        </div>
+                        <div><a href="http://www.plushospital.com/" target="_blank"><img
+                                    src="img/sponsor_sponsor_10.png" alt="3"></a>
+                        </div>
+                        <div><a href="https://www.selexmall.com/kr/shop/main.lime" target="_blank"><img
+                                    src="img/sponsor_sponsor_11.png" alt="4"></a></div>
+                        <div><a href="https://hangileye.co.kr/" target="_blank"><img src="img/sponsor_sponsor_12.png"
+                                    alt="5"></a></div>
+                        <div><a href="https://www.donga-otsuka.co.kr/" target="_blank"><img
+                                    src="img/sponsor_sponsor_14.png" alt="6"></a></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div><a href="https://www.yeonsu.go.kr/main/covid19.asp" target="_blank"><img
+                                    src="img/sponsor_sponsor_16.png" alt="1"></a></div>
+                        <div><a href="https://www.shell.co.kr/" target="_blank"><img src="img/sponsor_sponsor_17.png"
+                                    alt="2"></a></div>
+                        <div><a href="http://minddental.co.kr/main/index" target="_blank"><img
+                                    src="img/sponsor_sponsor_20.png" alt="3"></a></div>
+                        <div><a href="https://www.shinhan.com/index.jsp" target="_blank"><img
+                                    src="img/sponsor_sponsor_23.png" alt="4"></a></div>
+                        <div><a href="http://www.kki-digital.com/" target="_blank"><img src="img/sponsor_sponsor_24.png"
+                                    alt="5"></a>
+                        </div>
+                        <div><a href="https://www.koreanair.com/" target="_blank"><img src="img/sponsor_sponsor_26.png"
+                                    alt="6"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div> -->
+            </div>
+        </div><!-- .inner end -->
+    </section><!-- .sponsor end -->
+
+    <footer>
+        <div class="inner">
+            <div class="box">
+                <h2><a href="https://goddykim.github.io/project03/"><img src="img/footer_emblem.png" alt="1"></a></h2>
+                <div>
+                    <a href="https://play.google.com/store/apps/details?id=com.skt.ilbs.skwyverns.app"
+                        target="_blank"><img src="img/footer_sns_landers.png" alt="1"></a>
+                    <a href="https://www.instagram.com/ssglanders.incheon/" target="_blank"><img
+                            src="img/footer_sns_instagram.png" alt="2"></a>
+                    <a href="https://www.youtube.com/c/SSGLANDERS" target="_blank"><img src="img/footer_sns_youtube.png"
+                            alt="3"></a>
+                </div>
+            </div><!-- .box end -->
+            <div class="txt_1">
+                <ul>
+                    <li><a href="https://www.ssglanders.com/policy?pos=0&type=1">개인정보처리방침</a></li>
+                    <li><a href="https://www.ssglanders.com/policy?pos=0&type=2">이용약관</a></li>
+                    <li><a href="https://www.ssglanders.com/policy?pos=0&type=3">이메일주소무단수집거부</a></li>
+                </ul>
+            </div><!-- .txt_1 end -->
+            <div class="txt_2">
+                <p>주식회사 신세계야구단 대표이사:민경삼 | 주소:인천광역시 미추홀구 매소홀로 618(문학동) | 티켓문의:1588-7890 | 기타문의:1599-6970 <br>
+                    시즌 운영시간:홈경기일:10:00~19:00 원정경기일:10:00~17:00(월요일,홈경기 없는 주말 휴무) | 비시즌 운영시간:10:00~17:00(주말 및 공휴일 휴무)</p>
+            </div><!-- .txt_2 end -->
+        </div><!-- .inner end -->
+    </footer>
+</body>
+
+</html>
